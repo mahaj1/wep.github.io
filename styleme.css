@@ -36,7 +36,7 @@ ol{
         width: 80%;
         margin: 0 auto;
       }
-      p::first-letter {
+      p:first-letter {
         color: #483D8B;
         float: left;
         font-size: 5em;
