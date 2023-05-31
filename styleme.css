@@ -1,0 +1,27 @@
+h1{
+    color:brown;
+    font-family:"Times New Roman",serif;
+    text-align:center;
+}
+h3{
+    color:blue;
+    font-style:italic;
+    text-decoration:underline;
+    font-family:sans-serif;
+
+}
+span{
+    color:red;
+    font-weight:bold;
+}
+body{
+    font-size:large;
+    background-color: rgb(176, 235, 240);
+    font-family:Arial;
+}
+a{
+    font-weight: bold ;
+}
+ol{
+   list-style-type:decimal; 
+}
