@@ -29,3 +29,8 @@ a:hover{
 ol{
    list-style-type:decimal; 
 }
+
+p:first-letter {
+font-size: 1.5em;
+
+}
