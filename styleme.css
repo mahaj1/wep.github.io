@@ -35,6 +35,7 @@ ol{
         font-size: 1.3em;
         width: 80%;
         margin: 0 auto;
+        color: red;
       }
       p::first-letter {
         color: #483D8B;
