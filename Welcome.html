@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+<meta charset="utf-8">
+<link href="lab3Style.css" type="text/css" rel="stylesheet"/>
+<title>Lab 3</title>
+</head>
+
+<body>
+    <p>
+<img  src="logo.jpg" alt="logo" height="50" width="75">
+<span id="welcome">Welcome , Maha</span>
+ <button id="btn" >Logout</button>
+</p>
+<hr>
+<table> 
+    <caption> Product List</caption>
+    <thead> 
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Actions</th>
+        </tr>
+
+        
+    </thead>
+    <tr>
+        <td>Node.js</td>
+        <td>9.99</td>
+        <td>8</td>
+        <td><img src="truck.png" alt="car" height="50" width="75"></td>
+    </tr>
+
+    <tr>
+        <td>Reast</td>
+        <td>19.99</td>
+        <td>5</td>
+        <td><img src="truck.png" alt="car" height="50" width="75"></td>
+    </tr>
+
+    <tr>
+        <td>Angular</td>
+        <td>29.99</td>
+        <td>13</td>
+        <td><img src="truck.png" alt="car" height="50" width="75"></td>
+    </tr>
+
+</table>
+<table>
+    <thead>
+        <caption>Your shopping cart </caption>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>Node.js</td>
+        <td>9.99</td>
+        <td>9.99</td>
+        <td><button>-</button> <input type="text" maxlength="4" size="4" >
+            
+             <button>+</button></td>
+    </tr>
+    <tr>
+        <td>Angular</td>
+        <td>29.99</td>
+        <td>290.99</td>
+        <td>
+            
+            <button>-</button> <input type="text" maxlength="4" size="4"/>
+                
+                 <button>+</button></td>
+    </tr>
+    <tr>
+        <td id="Total"colspan="4"> Total : 300.98 </td>
+
+    </tr>
+</table>
+
+    <button id="btn">
+        Place Order
+    </button>
+<hr>
+
+</body>
+</html>

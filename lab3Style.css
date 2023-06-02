@@ -1,0 +1,54 @@
+
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+table{
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    
+    width: 90%;
+}
+#btn{
+    right: 5%;
+    text-align: center;
+    position:absolute;
+    width:100px;
+    height:30px;
+    margin-right: auto;
+    margin-top:2%;
+  
+}
+caption{
+    text-align: left;
+    padding:20px;
+}
+body{
+   
+    font-size: 20px;
+}
+img{
+    vertical-align: middle;
+}
+buttons{
+    
+    width: 200px;
+    position:absolute;
+    right: 50px;
+    text-align: center;
+}
+#Total{
+    text-align: right;
+}
+p{
+    position:relative;
+}
+span{
+    height: 50px;
+    width:150px;
+    position: absolute;
+    left: 50%;
+    right:50%;
+}
