@@ -1,0 +1,53 @@
+h1{
+    background-color: rgb(114, 160, 145);
+}
+
+.col1{
+    position: absolute;
+    left: 10%;
+    display: inline-block;
+ 
+}
+.col2{
+    position: relative;
+    left: 25%;
+    display: inline-block;
+  
+}
+.col3{
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+  
+}
+.col4{
+    position: relative;
+    left: 55%;
+    display: inline-block;
+    
+}
+div{
+    margin-top: 10px;
+}
+textarea{
+    height:max-content;
+}
+.btns{
+    
+ background-color: rgb(230, 234, 238);
+}
+#sub{
+    position: absolute;
+    margin-left: 50%;
+}
+#res{
+    position: relative;
+    margin-left: 55%;
+}
+a{
+    text-decoration: underline;
+    color: rgb(2, 2, 153);
+}
+select{
+    width: 170px;
+}
