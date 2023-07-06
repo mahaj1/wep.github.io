@@ -3,52 +3,332 @@
 <head>
     <title>LoG Test</title>
     <style>
+        .head{
+            text-align:center;
+        }
         .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            text-align: center;
+            
+            
+
+            margin: auto;
+  width: 50%;
+  padding: 10px;            
         }
         form {
-            width: 50%;
+            
             background-color: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
             border: 1px solid #dee2e6;
+            
         }
+input{
+    margin:5px;
+}
+
+        <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #3CD1CC;
+            overflow: hidden;
+
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline;
+            font-size: small;
+            font-weight: bold;
+        }
+        .navbar2 {
+            background-color: black;
+            overflow: hidden;
+         
+            top: 0;
+
+            width: 100%;
+            display: flex;
+           
+        }
+
+        .navbar2 a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            font-family:sans-serif;
+            font-size: medium;
+            text-decoration:none;
+        }
+        
+
+        .navbar .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a:not(:first-child) {
+                display: none;
+            }
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar.responsive {
+                position: relative;
+            }
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
     </style>
 </head>
 <body>
     
+
+    <div class="navbar2" id="myNavbar2">
+        <a href="https://keepyourloglow.com/">Keep Your LoG Low </a>
+
+    </div>
+
+<div class="head">
+    <h1>LoG Test</h1>
+</div>
+
+
+    <div class="navbar" id="myNavbar">
+        <a href="https://keepyourloglow.com/">Home</a>
+        <a href="https://keepyourloglow.com/understanding-log/">Understanding LoG</a>
+        <a href="https://keepyourloglow.com/personal-daily-practices-to-lower-level-of-greed-log/">Lower Your LoG</a>
+        <a href="https://keepyourloglow.com/practices-for-parents-to-lower-their-childrens-level-of-greed/">Lower Children’s LoG        </a>
+        <a href="https://keepyourloglow.com/practices-for-educators-to-lower-their-students-level-of-greed/">Lower Students’ LoG</a>
+        <a href="#news">Take the LoG Test</a>
+        <a href="#news">About the Author</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
     <div class="center">
 
-                <h1>LoG Test</h1>
+           <form id="surveyForm">
+            <h1>Quantity of Desires</h1>
+            <p>Consider all aspects of your life including material, emotional, and spiritual desires.</p> 
+            <p>Indicate the intensity of your desire on a scale of 1-5: 1 (Not at all), 2 (Slightly), 3 (Moderately), 4 (Very), 5 (Extremely)</p>
+       
+            <h2>Material Desires</h2>
+            <label for="careerDesire">1. How much do you desire to advance in your career?</label><br>
+            <input type="number" id="careerDesire" name="careerDesire" min="1" max="5" value=0><br>
+            
+            <label for="moneyDesire">2. How much do you desire to earn more money?</label><br>
+            <input type="number" id="moneyDesire" name="moneyDesire" min="1" max="5" value=0><br>
+            
+            <label for="houseDesire">3. How much do you desire to own a house?</label><br>
+            <input type="number" id="houseDesire" name="houseDesire" min="1" max="5" value=0><br>
+            
+            <label for="carDesire">4. How much do you desire to own a car?</label><br>
+            <input type="number" id="carDesire" name="carDesire" min="1" max="5" value=0><br>
+            
+            <label for="travelDesire">5. How much do you desire to travel?</label><br>
+            <input type="number" id="travelDesire" name="travelDesire" min="1" max="5" value=0><br>
+            
+            <h2>Emotional Desires</h2>
+
+            <label for="relationshipDesire">6. How much do you desire for a romantic relationship?</label><br>
+            <input type="number" id="relationshipDesire" name="relationshipDesire" min="1" max="5" value=0><br>
+            
+            <label for="familyDesire">7. How much do you desire for stronger family ties?</label><br>
+            <input type="number" id="familyDesire" name="familyDesire" min="1" max="5" value=0><br>
+            
+            <label for="friendshipDesire">8. How much do you desire for more friendships?</label><br>
+            <input type="number" id="friendshipDesire" name="friendshipDesire" min="1" max="5" value=0><br>
+            
+            <label for="recognitionDesire">9. How much do you desire for social recognition?</label><br>
+            <input type="number" id="recognitionDesire" name="recognitionDesire" min="1" max="5" value=0><br>
+            
+            <label for="esteemDesire">10. How much do you desire for self-esteem or self-confidence?</label><br>
+            <input type="number" id="esteemDesire" name="esteemDesire" min="1" max="5" value=0><br>
+            
 
 
 
-        
-        <p>Consider all aspects of your life including material, emotional, and spiritual desires.</p> 
-        <p>Indicate the intensity of your desire on a scale of 1-5: 1 (Not at all), 2 (Slightly), 3 (Moderately), 4 (Very), 5 (Extremely)</p>
-        <form id="surveyForm">
-            <h2>Quantity of Desires</h2>
-            <label for="careerDesire">How much do you desire to advance in your career?</label><br>
-            <input type="number" id="careerDesire" name="careerDesire" min="1" max="5"><br>
+            <h2>Spiritual Desires</h2>
+            <label for="peaceDesire">11. How much do you desire for inner peace?</label><br>
+            <input type="number" id="peaceDesire" name="peaceDesire" min="1" max="5" value=0><br>
+            
+            <label for="faithDesire">12. How much do you desire for faith or spiritual connection?</label><br>
+            <input type="number" id="faithDesire" name="faithDesire" min="1" max="5" value=0><br>
+            
+            <label for="growthDesire">13. How much do you desire for personal growth or self-realization?</label><br>
+            <input type="number" id="growthDesire" name="growthDesire" min="1" max="5" value=0><br>
+            
+            <label for="contributionDesire">14. How much do you desire to help others or make a societal contribution?</label><br>
+            <input type="number" id="contributionDesire" name="contributionDesire" min="1" max="5" value=0><br>
+            
+            <label for="purposeDesire">15. How much do you desire for a sense of purpose or meaning in life?</label><br>
+            <input type="number" id="purposeDesire" name="purposeDesire" min="1" max="5" value=0><br>
+            <h2>Other Desires</h2>
+
+            <label for="otherDesire">If you have more desires that were not included above, think about them assgin the intensity of your desire for each one then add them all up. </label><br>
+            <input type="number" id="otherDesire" name="otherDesire"  value=0><br>
+         
             <!-- Repeat for all other questions -->
 
-            <h2>Appreciation of Possessions</h2>
-            <label for="careerAppreciation">How much do you appreciate your current career?</label><br>
-            <input type="number" id="careerAppreciation" name="careerAppreciation" min="1" max="5"><br>
+            <h1>Appreciation of Possessions</h1>
+            <p>Consider all aspects of your life including material assets, achievements, relationships. </p>
+            <p>Indicate the level of your appreciation on a scale of 1-5: 1 (Not at all), 2 (Slightly), 3 (Moderately), 4 (Very), 5 (Extremely)</P>
+                <h2>Material Assets</h2>
+
+
+
+
+                    <label for="careerAppreciation">1. How much do you appreciate your current career?</label><br>
+                    <input type="number" id="careerAppreciation" name="careerAppreciation" min="1" max="5" value=0><br>
+                    
+                    <label for="moneyAppreciation">2. How much do you appreciate your current financial situation?</label><br>
+                    <input type="number" id="moneyAppreciation" name="moneyAppreciation" min="1" max="5" value=0><br>
+                    
+                    <label for="houseAppreciation">3. How much do you appreciate your house (if applicable)?</label><br>
+                    <input type="number" id="houseAppreciation" name="houseAppreciation" min="1" max="5" value=0><br>
+                    
+                    <label for="carAppreciation">4. How much do you appreciate your car (if applicable)?</label><br>
+                    <input type="number" id="carAppreciation" name="carAppreciation" min="1" max="5" value=0><br>
+                    
+                    <label for="travelAppreciation">5. How much do you appreciate your opportunities to travel (if applicable)?</label><br>
+                    <input type="number" id="travelAppreciation" name="travelAppreciation" min="1" max="5" value=0><br>
+                    
+                    <h2>Emotional Aspects</h2>
+                        <label for="relationshipAppreciation">6. How much do you appreciate your romantic relationship (if applicable)?</label><br>
+                        <input type="number" id="relationshipAppreciation" name="relationshipAppreciation" min="1" max="5" value=0><br>
+                        
+                        <label for="familyAppreciation">7. How much do you appreciate your family ties?</label><br>
+                        <input type="number" id="familyAppreciation" name="familyAppreciation" min="1" max="5" value=0><br>
+                        
+                        <label for="friendshipsAppreciation">8. How much do you appreciate your friendships?</label><br>
+                        <input type="number" id="friendshipsAppreciation" name="friendshipsAppreciation" min="1" max="5" value=0><br>
+                        
+                        <label for="socialRecognitionAppreciation">9. How much do you appreciate your social recognition?</label><br>
+                        <input type="number" id="socialRecognitionAppreciation" name="socialRecognitionAppreciation" min="1" max="5" value=0><br>
+                        
+                        <label for="selfEsteemAppreciation">10. How much do you appreciate your self-esteem or self-confidence?</label><br>
+                        <input type="number" id="selfEsteemAppreciation" name="selfEsteemAppreciation" min="1" max="5" value=0><br>
+                        
+                        <h2>Spiritual Aspects</h2>
+
+                        <label for="innerPeaceAppreciation">11. How much do you appreciate your inner peace?</label><br>
+<input type="number" id="innerPeaceAppreciation" name="innerPeaceAppreciation" min="1" max="5" value=0><br>
+
+<label for="spiritualConnectionAppreciation">12. How much do you appreciate your faith or spiritual connection?</label><br>
+<input type="number" id="spiritualConnectionAppreciation" name="spiritualConnectionAppreciation" min="1" max="5" value=0><br>
+
+<label for="personalGrowthAppreciation">13. How much do you appreciate your personal growth or self-realization?</label><br>
+<input type="number" id="personalGrowthAppreciation" name="personalGrowthAppreciation" min="1" max="5" value=0><br>
+
+<label for="contributionAppreciation">14. How much do you appreciate your contributions to others or society?</label><br>
+<input type="number" id="contributionAppreciation" name="contributionAppreciation" min="1" max="5" value=0><br>
+
+<label for="lifePurposeAppreciation">15. How much do you appreciate your sense of purpose or meaning in life?</label><br>
+<input type="number" id="lifePurposeAppreciation" name="lifePurposeAppreciation" min="1" max="5" value=0><br>
+
+<h2>Other Appreciation</h2>
+
+<label for="otherAppreciation">If you have more appreciations that were not included above, think about them assgin the intensity of your appreciation for each one then add them all up. </label><br>
+<input type="number" id="otherAppreciation" name="otherAppreciation"  value=0><br>
+
             <!-- Repeat for all other questions -->
 
             <button type="button" onclick="calculateLog()">Submit</button>
+            <div id="resultdiv" class="head"><h1 id="result"></h1></div>
         </form>
+       
     </div>
 
-    <div id="result"></div>
+    
 
     <script>
+
+function calculateLog() {
+        // Get values from form
+        let careerDesire = parseInt(document.getElementById('careerDesire').value)|| 0;
+        let moneyDesire = parseInt(document.getElementById('moneyDesire').value)|| 0;
+        let houseDesire = parseInt(document.getElementById('houseDesire').value)|| 0;
+        let carDesire = parseInt(document.getElementById('carDesire').value)|| 0;
+        let travelDesire = parseInt(document.getElementById('travelDesire').value)|| 0;
+        let romanticDesire = parseInt(document.getElementById('romanticDesire').value)|| 0;
+        let familyTiesDesire = parseInt(document.getElementById('familyTiesDesire').value)|| 0;
+        let friendshipDesire = parseInt(document.getElementById('friendshipDesire').value)|| 0;
+        let recognitionDesire = parseInt(document.getElementById('recognitionDesire').value)|| 0;
+        let selfEsteemDesire = parseInt(document.getElementById('selfEsteemDesire').value)|| 0;
+        let innerPeaceDesire = parseInt(document.getElementById('innerPeaceDesire').value)|| 0;
+        let spiritualConnectionDesire = parseInt(document.getElementById('spiritualConnectionDesire').value)|| 0;
+        let personalGrowthDesire = parseInt(document.getElementById('personalGrowthDesire').value)|| 0;
+        let societalContributionDesire = parseInt(document.getElementById('societalContributionDesire').value)|| 0;
+        let lifePurposeDesire = parseInt(document.getElementById('lifePurposeDesire').value)|| 0;
+
+        let careerAppreciation = parseInt(document.getElementById('careerAppreciation').value)|| 0;
+        let financialSituationAppreciation = parseInt(document.getElementById('financialSituationAppreciation').value)|| 0;
+        let houseAppreciation = parseInt(document.getElementById('houseAppreciation').value)|| 0;
+        let carAppreciation = parseInt(document.getElementById('carAppreciation').value)|| 0;
+        let travelOpportunityAppreciation = parseInt(document.getElementById('travelOpportunityAppreciation').value)|| 0;
+        let romanticRelationshipAppreciation = parseInt(document.getElementById('romanticRelationshipAppreciation').value)|| 0;
+        let familyTiesAppreciation = parseInt(document.getElementById('familyTiesAppreciation').value)|| 0;
+        let friendshipsAppreciation = parseInt(document.getElementById('friendshipsAppreciation').value)|| 0;
+        let recognitionAppreciation = parseInt(document.getElementById('recognitionAppreciation').value)|| 0;
+        let selfEsteemAppreciation = parseInt(document.getElementById('selfEsteemAppreciation').value)|| 0;
+        let innerPeaceAppreciation = parseInt(document.getElementById('innerPeaceAppreciation').value)|| 0;
+        let spiritualConnectionAppreciation = parseInt(document.getElementById('spiritualConnectionAppreciation').value)|| 0;
+        let personalGrowthAppreciation = parseInt(document.getElementById('personalGrowthAppreciation').value)|| 0;
+        let societalContributionAppreciation = parseInt(document.getElementById('societalContributionAppreciation').value)|| 0;
+        let lifePurposeAppreciation = parseInt(document.getElementById('lifePurposeAppreciation').value)|| 0;
+
+
+        let otherDesire = parseInt(document.getElementById('otherDesire').value)|| 0;
+        let otherAppreciation = parseInt(document.getElementById('otherAppreciation').value)|| 0;
+
+
+
+        // Calculate Quantity of Desires and Appreciation of Possessions
+        let quantityOfDesires = careerDesire + moneyDesire + houseDesire + carDesire + travelDesire + romanticDesire + familyTiesDesire + friendshipDesire + recognitionDesire + selfEsteemDesire + innerPeaceDesire + spiritualConnectionDesire + personalGrowthDesire + societalContributionDesire + lifePurposeDesire+otherDesire;
+        let appreciationOfPossessions = careerAppreciation + financialSituationAppreciation + houseAppreciation + carAppreciation + travelOpportunityAppreciation + romanticRelationshipAppreciation + familyTiesAppreciation + friendshipsAppreciation + recognitionAppreciation + selfEsteemAppreciation + innerPeaceAppreciation + spiritualConnectionAppreciation + personalGrowthAppreciation + societalContributionAppreciation + lifePurposeAppreciation + otherAppreciation;
+
+        // Calculate LoG
+        let log=0;
+        if(appreciationOfPossessions !== 0) { // avoid division by zero
+            log = quantityOfDesires / appreciationOfPossessions;
+        } else  {
+           log=0
+             // or handle this situation differently
+        }
+
+        // Display LoG
+        document.getElementById('result').innerText = "Your Level of Greed is: "+ log;
+    }
+
+
+
         function calculateLog() {
             // Get values from form
             let careerDesire = document.getElementById('careerDesire').value;
@@ -67,6 +347,15 @@
             // Display LoG
             document.getElementById('result').innerText = 'Your Level of Greed is: ' + log;
         }
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
     </script>
 </body>
 </html>
