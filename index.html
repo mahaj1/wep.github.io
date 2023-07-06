@@ -26,11 +26,12 @@ input{
     margin:5px;
 }
 
-        <style>
+       
         body {
+          
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: serif;
         }
 
         .navbar {
@@ -271,42 +272,44 @@ input{
     <script>
 
 function calculateLog() {
+    console.log(0);
+        
         // Get values from form
-        let careerDesire = parseInt(document.getElementById('careerDesire').value)|| 0;
-        let moneyDesire = parseInt(document.getElementById('moneyDesire').value)|| 0;
-        let houseDesire = parseInt(document.getElementById('houseDesire').value)|| 0;
-        let carDesire = parseInt(document.getElementById('carDesire').value)|| 0;
-        let travelDesire = parseInt(document.getElementById('travelDesire').value)|| 0;
-        let romanticDesire = parseInt(document.getElementById('romanticDesire').value)|| 0;
-        let familyTiesDesire = parseInt(document.getElementById('familyTiesDesire').value)|| 0;
-        let friendshipDesire = parseInt(document.getElementById('friendshipDesire').value)|| 0;
-        let recognitionDesire = parseInt(document.getElementById('recognitionDesire').value)|| 0;
-        let selfEsteemDesire = parseInt(document.getElementById('selfEsteemDesire').value)|| 0;
-        let innerPeaceDesire = parseInt(document.getElementById('innerPeaceDesire').value)|| 0;
-        let spiritualConnectionDesire = parseInt(document.getElementById('spiritualConnectionDesire').value)|| 0;
-        let personalGrowthDesire = parseInt(document.getElementById('personalGrowthDesire').value)|| 0;
-        let societalContributionDesire = parseInt(document.getElementById('societalContributionDesire').value)|| 0;
-        let lifePurposeDesire = parseInt(document.getElementById('lifePurposeDesire').value)|| 0;
+        let careerDesire = parseInt(document.getElementById('careerDesire').value);
+        let moneyDesire = parseInt(document.getElementById('moneyDesire').value);
+        let houseDesire = parseInt(document.getElementById('houseDesire').value);
+        let carDesire = parseInt(document.getElementById('carDesire').value);
+        let travelDesire = parseInt(document.getElementById('travelDesire').value);
+        let romanticDesire = parseInt(document.getElementById('relationshipDesire').value);
+        let familyTiesDesire = parseInt(document.getElementById('familyDesire').value);
+        let friendshipDesire = parseInt(document.getElementById('friendshipDesire').value);
+        let recognitionDesire = parseInt(document.getElementById('recognitionDesire').value);
+        let selfEsteemDesire = parseInt(document.getElementById('esteemDesire').value);
+        let innerPeaceDesire = parseInt(document.getElementById('peaceDesire').value);
+        let spiritualConnectionDesire = parseInt(document.getElementById('faithDesire').value);
+        let personalGrowthDesire = parseInt(document.getElementById('growthDesire').value);
+        let societalContributionDesire = parseInt(document.getElementById('contributionDesire').value);
+        let lifePurposeDesire = parseInt(document.getElementById('purposeDesire').value);
 
-        let careerAppreciation = parseInt(document.getElementById('careerAppreciation').value)|| 0;
-        let financialSituationAppreciation = parseInt(document.getElementById('financialSituationAppreciation').value)|| 0;
-        let houseAppreciation = parseInt(document.getElementById('houseAppreciation').value)|| 0;
-        let carAppreciation = parseInt(document.getElementById('carAppreciation').value)|| 0;
-        let travelOpportunityAppreciation = parseInt(document.getElementById('travelOpportunityAppreciation').value)|| 0;
-        let romanticRelationshipAppreciation = parseInt(document.getElementById('romanticRelationshipAppreciation').value)|| 0;
-        let familyTiesAppreciation = parseInt(document.getElementById('familyTiesAppreciation').value)|| 0;
-        let friendshipsAppreciation = parseInt(document.getElementById('friendshipsAppreciation').value)|| 0;
-        let recognitionAppreciation = parseInt(document.getElementById('recognitionAppreciation').value)|| 0;
-        let selfEsteemAppreciation = parseInt(document.getElementById('selfEsteemAppreciation').value)|| 0;
-        let innerPeaceAppreciation = parseInt(document.getElementById('innerPeaceAppreciation').value)|| 0;
-        let spiritualConnectionAppreciation = parseInt(document.getElementById('spiritualConnectionAppreciation').value)|| 0;
-        let personalGrowthAppreciation = parseInt(document.getElementById('personalGrowthAppreciation').value)|| 0;
-        let societalContributionAppreciation = parseInt(document.getElementById('societalContributionAppreciation').value)|| 0;
-        let lifePurposeAppreciation = parseInt(document.getElementById('lifePurposeAppreciation').value)|| 0;
+        let careerAppreciation = parseInt(document.getElementById('careerAppreciation').value);
+        let financialSituationAppreciation = parseInt(document.getElementById('moneyAppreciation').value);
+        let houseAppreciation = parseInt(document.getElementById('houseAppreciation').value);
+        let carAppreciation = parseInt(document.getElementById('carAppreciation').value);
+        let travelOpportunityAppreciation = parseInt(document.getElementById('travelAppreciation').value);
+        let romanticRelationshipAppreciation = parseInt(document.getElementById('relationshipAppreciation').value);
+        let familyTiesAppreciation = parseInt(document.getElementById('familyAppreciation').value);
+        let friendshipsAppreciation = parseInt(document.getElementById('friendshipsAppreciation').value);
+        let recognitionAppreciation = parseInt(document.getElementById('socialRecognitionAppreciation').value);
+        let selfEsteemAppreciation = parseInt(document.getElementById('selfEsteemAppreciation').value);
+        let innerPeaceAppreciation = parseInt(document.getElementById('innerPeaceAppreciation').value);
+        let spiritualConnectionAppreciation = parseInt(document.getElementById('spiritualConnectionAppreciation').value);
+        let personalGrowthAppreciation = parseInt(document.getElementById('personalGrowthAppreciation').value);
+        let societalContributionAppreciation = parseInt(document.getElementById('contributionAppreciation').value);
+        let lifePurposeAppreciation = parseInt(document.getElementById('lifePurposeAppreciation').value);
 
 
-        let otherDesire = parseInt(document.getElementById('otherDesire').value)|| 0;
-        let otherAppreciation = parseInt(document.getElementById('otherAppreciation').value)|| 0;
+        let otherDesire = parseInt(document.getElementById('otherDesire').value);
+        let otherAppreciation = parseInt(document.getElementById('otherAppreciation').value);
 
 
 
@@ -314,12 +317,18 @@ function calculateLog() {
         let quantityOfDesires = careerDesire + moneyDesire + houseDesire + carDesire + travelDesire + romanticDesire + familyTiesDesire + friendshipDesire + recognitionDesire + selfEsteemDesire + innerPeaceDesire + spiritualConnectionDesire + personalGrowthDesire + societalContributionDesire + lifePurposeDesire+otherDesire;
         let appreciationOfPossessions = careerAppreciation + financialSituationAppreciation + houseAppreciation + carAppreciation + travelOpportunityAppreciation + romanticRelationshipAppreciation + familyTiesAppreciation + friendshipsAppreciation + recognitionAppreciation + selfEsteemAppreciation + innerPeaceAppreciation + spiritualConnectionAppreciation + personalGrowthAppreciation + societalContributionAppreciation + lifePurposeAppreciation + otherAppreciation;
 
+
         // Calculate LoG
         let log=0;
         if(appreciationOfPossessions !== 0) { // avoid division by zero
             log = quantityOfDesires / appreciationOfPossessions;
         } else  {
-           log=0
+           if (quantityOfDesires==0){
+            log = "UNDEFINED"
+           }
+           else{
+            log = "INFINITY"
+           }
              // or handle this situation differently
         }
 
@@ -329,7 +338,7 @@ function calculateLog() {
 
 
 
-        function calculateLog() {
+        function calculateLog0() {
             // Get values from form
             let careerDesire = document.getElementById('careerDesire').value;
             // Repeat for all other questions
