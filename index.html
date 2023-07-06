@@ -1,14 +1,45 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+    <title>Quantifying Human Greed Survey</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+    </style>
 </head>
-
 <body>
-  <a href ="Lab1.html"> Lab 1</a>
-  <a href = "aboutme.html"> Lab 2</a>
-  
-  
+    <h1>Quantifying Human Greed Survey</h1>
+    <form id="logSurvey">
+        <h2>Section 1: Participant Information</h2>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="150"><br>
+        <!-- more participant info fields here... -->
+        
+        <h2>Section 2: Quantity of Desires</h2>
+        <label for="careerDesire">How much do you desire to advance in your career?</label><br>
+        <input type="number" id="careerDesire" name="careerDesire" min="1" max="5"><br>
+        <!-- more desires questions here... -->
+
+        <h2>Section 3: Appreciation of Possessions</h2>
+        <label for="careerAppreciation">How much do you appreciate your current career?</label><br>
+        <input type="number" id="careerAppreciation" name="careerAppreciation" min="1" max="5"><br>
+        <!-- more appreciation questions here... -->
+
+        <input type="button" value="Submit" onclick="calculateLog()">
+    </form>
+    <h2>Your LoG Score: <span id="score"></span></h2>
+
+<script>
+    function calculateLog() {
+        var careerDesire = document.getElementById('careerDesire').value;
+        var careerAppreciation = document.getElementById('careerAppreciation').value;
+        if(careerDesire && careerAppreciation) {
+            var score = careerDesire / careerAppreciation;
+            document.getElementById('score').innerText = score.toFixed(2);
+        } else {
+            alert("Please fill in all fields.");
+        }
+    }
+</script>
+
 </body>
 </html>
