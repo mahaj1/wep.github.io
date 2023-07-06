@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quantifying Human Greed Survey</title>
+    <title>LoG Survey</title>
     <style>
-        body { font-family: Arial, sans-serif; }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
     </style>
 </head>
 <body>
-    <h1>Quantifying Human Greed Survey</h1>
-    <form id="logSurvey">
-        <h2>Section 1: Participant Information</h2>
-        <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age" min="1" max="150"><br>
-        <!-- more participant info fields here... -->
-        
-        <h2>Section 2: Quantity of Desires</h2>
-        <label for="careerDesire">How much do you desire to advance in your career?</label><br>
-        <input type="number" id="careerDesire" name="careerDesire" min="1" max="5"><br>
-        <!-- more desires questions here... -->
+    <div class="center">
+        <p>Consider all aspects of your life including material, emotional, and spiritual desires. Indicate the intensity of your desire on a scale of 1-5: 1 (Not at all), 2 (Slightly), 3 (Moderately), 4 (Very), 5 (Extremely)</p>
+        <form id="surveyForm">
+            <h2>Quantity of Desires</h2>
+            <label for="careerDesire">How much do you desire to advance in your career?</label><br>
+            <input type="number" id="careerDesire" name="careerDesire" min="1" max="5"><br>
+            <!-- Repeat for all other questions -->
 
-        <h2>Section 3: Appreciation of Possessions</h2>
-        <label for="careerAppreciation">How much do you appreciate your current career?</label><br>
-        <input type="number" id="careerAppreciation" name="careerAppreciation" min="1" max="5"><br>
-        <!-- more appreciation questions here... -->
+            <h2>Appreciation of Possessions</h2>
+            <label for="careerAppreciation">How much do you appreciate your current career?</label><br>
+            <input type="number" id="careerAppreciation" name="careerAppreciation" min="1" max="5"><br>
+            <!-- Repeat for all other questions -->
 
-        <input type="button" value="Submit" onclick="calculateLog()">
-    </form>
-    <h2>Your LoG Score: <span id="score"></span></h2>
+            <button type="button" onclick="calculateLog()">Submit</button>
+        </form>
+    </div>
 
-<script>
-    function calculateLog() {
-        var careerDesire = document.getElementById('careerDesire').value;
-        var careerAppreciation = document.getElementById('careerAppreciation').value;
-        if(careerDesire && careerAppreciation) {
-            var score = careerDesire / careerAppreciation;
-            document.getElementById('score').innerText = score.toFixed(2);
-        } else {
-            alert("Please fill in all fields.");
+    <div id="result"></div>
+
+    <script>
+        function calculateLog() {
+            // Get values from form
+            let careerDesire = document.getElementById('careerDesire').value;
+            // Repeat for all other questions
+
+            let careerAppreciation = document.getElementById('careerAppreciation').value;
+            // Repeat for all other questions
+
+            // Calculate Quantity of Desires and Appreciation of Possessions (simple example, replace with actual calculation)
+            let quantityOfDesires = parseInt(careerDesire); // + other desire values
+            let appreciationOfPossessions = parseInt(careerAppreciation); // + other appreciation values
+
+            // Calculate LoG
+            let log = quantityOfDesires / appreciationOfPossessions;
+
+            // Display LoG
+            document.getElementById('result').innerText = 'Your Level of Greed is: ' + log;
         }
-    }
-</script>
-
+    </script>
 </body>
 </html>
